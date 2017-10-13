@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewBag.Title = "Import";
+}
+
+<h2>Import</h2>
+
+<div class="row">
+    <h3>Select the language of the repositories to import:</h3>
+</div>
+
+@using (@Html.BeginForm("Import", "Repository", FormMethod.Post))
+{
+    <div class="row">
+        <div class="row">
+            <div class="col-xs-12">
+                <input type="submit" name="language" class="btn btn-primary" value="C" />
+                <input type="submit" name="language" class="btn btn-primary" value="Java" />
+                <input type="submit" name="language" class="btn btn-primary" value="Python" />
+                <input type="submit" name="language" class="btn btn-primary" value="Ruby" />
+                <input type="submit" name="language" class="btn btn-primary" value="Julia" />
+            </div>
+        </div>
+    </div>
+}
